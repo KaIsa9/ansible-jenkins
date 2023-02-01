@@ -1,0 +1,9 @@
+[submodule "playbooks/roles"]
+	path = playbooks/roles
+	url = https://github.com/KaIsa9/ansible-role-jenkins.git
+[submodule "playbooks/geerlingguy.jenkins"]
+	path = playbooks/geerlingguy.jenkins
+	url = https://github.com/KaIsa9/ansible-role-jenkins.git
+[submodule "playbooks/geerlingguy.java"]
+	path = playbooks/geerlingguy.java
+	url = https://github.com/KaIsa9/ansible-role-java.git
