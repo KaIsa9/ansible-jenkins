@@ -14,9 +14,10 @@ plugins:
   - junit
   - maven-plugin
   - pipeline
-  - pipeline-stage-step
-  - pipeline-model-definition
   - pipeline-groovy
+  - pipeline-maven
+  - pipeline-model-definition
+  - pipeline-stage-step
   - pipeline-stage-view
   - scm-api
   - warnings-ng
