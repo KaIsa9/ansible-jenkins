@@ -11,6 +11,7 @@
     jenkins_job_config: "{{ lookup('file', 'templates/pipeline_job_config.xml') }}"
     jenkins_multibranch_job_config: "{{ lookup('file', 'templates/multibranch_pipeline_config.xml') }}"
     maven_script: "{{ lookup('file', 'groovy/maven_install.groovy') }}"
+    maven_version: 3.8.4
 
   pre_tasks:
     - include_vars: plugins.yml
@@ -36,7 +37,7 @@
         password: admin
 #        token: 1150518ddf064910afaed37f47716da023
         url: "http://{{ jenkins_hostname }}:{{ jenkins_http_port }}"
-    - name: Adding maven plugin to the jenkins
+    - name: Adding maven to the jenkins
       community.general.jenkins_script:
         script: '{{ maven_script }}'
         user: admin

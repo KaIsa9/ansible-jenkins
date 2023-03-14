@@ -1,11 +1,11 @@
 # Install Jenkins with plugins, create multibranch with ansible-playbook on Linux ubuntu
-##Jenkins server:
+## Jenkins server:
 *   Jenkins host will be set as _127.0.0.1_ and port _8081_- [local Jenkins](http://127.0.0.1:8081)
 *   Default jdk will be - _openjdk-17-jdk_
 *   Your credentials for Jenkins will be username/password -  _admin/admin_
 *   Maven version that will be installed - _3.8.7_
 *   [List of plugins that will be installed](ListofJenkinsPluginsToBeInstalled.md)
-##Project and job:
+## Project and job:
 *  As the example we used the following [project](https://github.com/Alliedium/springboot-api-rest-example)
 *  Jenkinsfile location for our job will be _jenkins/Jenkinsfile_
 

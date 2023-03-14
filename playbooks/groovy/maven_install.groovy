@@ -6,8 +6,8 @@ import jenkins.model.Jenkins
 import jenkins.plugins.*
 import org.jenkinsci.plugins.maven.*
 
-mavenName = "maven-387"
-mavenVersion = "3.8.7"
+mavenName = "maven"
+mavenVersion = "${maven_version}"
 
 def mavenPlugin = Jenkins.get().getExtensionList(Maven.DescriptorImpl.class)[0]
 
