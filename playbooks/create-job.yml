@@ -11,7 +11,7 @@
     jenkins_job_config: "{{ lookup('file', 'templates/pipeline_job_config.xml') }}"
     jenkins_multibranch_job_config: "{{ lookup('file', 'templates/multibranch_pipeline_config.xml') }}"
     maven_script: "{{ lookup('file', 'groovy/maven_install.groovy') }}"
-    maven_version: 3.8.4
+    maven_version: 3.9.0
 
   pre_tasks:
     - include_vars: plugins.yml
@@ -43,4 +43,5 @@
         user: admin
         password: admin
         url: "http://{{ jenkins_hostname }}:{{ jenkins_http_port }}"
+        maven_version: '{{ maven_version }}'
 
