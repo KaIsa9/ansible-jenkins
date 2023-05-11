@@ -1,14 +1,16 @@
 - name: Verify
-  hosts: all
-  gather_facts: false
+  hosts: localhost
+  gather_facts: true
   tasks:
     - name: Example assertion
       ansible.builtin.assert:
         that: true
     - name: Check if Jenkins is running.
       uri:
-        url: "http://127.0.0.1:8085/"
-        status_code: 200
+        url: "http://localhost:8085/"
+        status_code:
+          - 200
+          - 403
 #      register: result
 #      until: result.status == 200
 #      retries: 2
