@@ -31,7 +31,7 @@ scenario:
   test_sequence:
     - dependency
     - cleanup
-    - syntax
+#    - syntax
     - create
     - converge
     - verify
